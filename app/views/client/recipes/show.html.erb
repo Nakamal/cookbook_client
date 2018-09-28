@@ -20,5 +20,8 @@
 
 <h5>Created On: <%= @recipe["formatted"]["created_at"] %></h5>
 
+<a href="/client/recipes/<%= @recipe["id"] %>/edit">Edit</a>
+<a href="/client/recipes/<%= @recipe["id"] %>" data-method="delete">Delete</a>
+
 <img src="<%= @recipe["image_url"] %>">
 
